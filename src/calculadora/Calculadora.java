@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Calculadora {
     public static void main(String[] args) {
        Scanner in = new Scanner(System.in);
-       int num1 = 0;
-       int num2 = 0;
-       int irrelevant1, irrelevant2;
+       int numero1 = 0;
+       int numero2 = 0;
        System.out.println("introdueix el primer nombre");
-       num1=in.nextInt();
+       numero1=in.nextInt();
        System.out.println("introdueix el segon nombre");
-       num2=in.nextInt();
-       suma(num1,num2);
-       resta(num1,num2);
+       numero2=in.nextInt();
+       suma(numero1,numero2);
+       resta(numero1,numero2);
+       multiplicacio(numero1,numero2);
     }
     private static int suma(int x,int y)
     {
@@ -24,5 +24,10 @@ public class Calculadora {
     {
         System.out.println(x+"-"+y+"="+(x-y));
         return x-y;
+    }
+     private static int multiplicacio(int x,int y)
+    {
+        System.out.println(x+"*"+y+"="+(x*y));
+        return x*y;
     }
 }
