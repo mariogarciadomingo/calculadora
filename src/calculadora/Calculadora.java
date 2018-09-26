@@ -13,10 +13,16 @@ public class Calculadora {
        System.out.println("introdueix el segon nombre");
        num2=in.nextInt();
        suma(num1,num2);
+       resta(num1,num2);
     }
     private static int suma(int x,int y)
     {
         System.out.println(x+"+"+y+"="+(x+y));
         return x+y;
+    }
+    private static int resta(int x,int y)
+    {
+        System.out.println(x+"-"+y+"="+(x-y));
+        return x-y;
     }
 }
