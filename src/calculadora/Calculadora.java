@@ -7,6 +7,7 @@ public class Calculadora {
        Scanner in = new Scanner(System.in);
        int num1 = 0;
        int num2 = 0;
+       int irrelevant1, irrelevant2;
        System.out.println("introdueix el primer nombre");
        num1=in.nextInt();
        System.out.println("introdueix el segon nombre");
